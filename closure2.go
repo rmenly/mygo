@@ -47,4 +47,22 @@ func main() {
 		return a - b
 	}, 20, 5)
 	fmt.Println(diff1)
+
+	fmt.Println("--")
+	var fib func(n int) int
+	fib = func(n int) int {
+
+		fmt.Println("*", n)
+		if n < 2 {
+			return n
+		}
+		a := fib(n - 1)
+		fmt.Println("a", n, a)
+		b := fib(n - 2)
+		fmt.Println("#", n, a, b, "result:", a+b)
+		return a + b
+		// return fib(n-1) + fib(n-2)
+	}
+	// fmt.Println("fib:", fib(3))
+	fmt.Println("fib:", fib(7))
 }
