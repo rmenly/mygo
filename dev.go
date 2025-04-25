@@ -35,4 +35,19 @@ func main() {
 		a := 10
 		fmt.Printf("&a2=%p\n", &a)
 	}
+	{
+		a := 100
+		fmt.Printf("======\n")
+		fmt.Printf("b:%b\n", &a)
+		fmt.Printf("c:%c\n", &a)
+		fmt.Printf("d:%d\n", &a)
+		fmt.Printf("o:%o\n", &a)
+		fmt.Printf("x:%x\n", &a)
+		fmt.Printf("X:%X\n", &a)
+		fmt.Printf("U:%U\n", &a)
+		fmt.Printf("s:%s\n", &a)
+		fmt.Printf("t:%t\n", &a)
+		fmt.Printf("v:%v\n", &a)
+		fmt.Printf("T:%T\n", &a)
+	}
 }
