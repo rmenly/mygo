@@ -12,8 +12,7 @@ func SlicesIndex[S ~[]E, E comparable](s S, v E) int {
 }
 
 type List[T any] struct {
-	head,
-	tail *element[T]
+	head, tail *element[T]
 }
 type element[T any] struct {
 	next *element[T]
